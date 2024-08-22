@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-assets_folder = "./assets/"
+assets_folder = "/models/assets/"
 os.makedirs(assets_folder, exist_ok=True)
 
 file_links = {
