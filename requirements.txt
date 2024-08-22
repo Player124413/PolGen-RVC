@@ -1,7 +1,7 @@
 # Основные библиотеки для работы с данными и моделями
 requests
 tensorboardX
-fairseq==0.12.2
+git+https://github.com/utter-project/fairseq.git
 faiss-cpu==1.7.3
 
 # Библиотеки для работы со звуком
