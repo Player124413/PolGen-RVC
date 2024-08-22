@@ -5,8 +5,8 @@ assets_folder = "/models/assets/"
 os.makedirs(assets_folder, exist_ok=True)
 
 file_links = {
-    "rmvpe/rmvpe.pt": "https://huggingface.co/Rejekts/project/resolve/main/rmvpe.pt",
-    "hubert/hubert_base.pt": "https://huggingface.co/utter-project/mHuBERT-147/resolve/main/checkpoint_best.pt"
+    "rmvpe.pt": "https://huggingface.co/Rejekts/project/resolve/main/rmvpe.pt",
+    "hubert_base.pt": "https://huggingface.co/utter-project/mHuBERT-147/resolve/main/checkpoint_best.pt"
 }
 
 for file, link in file_links.items():
