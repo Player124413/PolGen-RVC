@@ -26,5 +26,12 @@ if __name__ == '__main__':
             url_download()
             zip_upload()
             files_upload()
-    
-    app.launch(share=True, enable_queue=True, server_name='0.0.0.0', server_port=7860, show_error=True, quiet=True, show_api=False)
+if __name__ == '__main__':
+    parser = ArgumentParser(description='Создать AI-кавер песни в директории song_output/id.', add_help=True)
+    parser.add_argument("--share", action="store_true", dest="share_enabled", default=False, help="Разрешить совместное использование")
+    parser.add_argument("--listen", action="store_true", default=False, help="Сделать WebUI доступным из вашей локальной сети.")
+    parser.add_argument('--listen-host', type=str, help='Имя хоста, которое будет использовать сервер.')
+    parser.add_argument('--listen-port', type=int, help='Порт прослушивания, который будет использовать сервер.')
+    args = parser.parse_args()
+    app.launch(share=True, enable_queue=True, server_name=None if not args.listen else (args.listen_host or '0.0.0.0'),
+        server_port=args.listen_port, show_error=True, quiet=True, show_api=False)
