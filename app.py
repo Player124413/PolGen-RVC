@@ -27,7 +27,6 @@ if __name__ == '__main__':
             zip_upload()
             files_upload()
     if __name__ == '__main__':
-    parser = ArgumentParser(description='Создать AI-кавер песни в директории song_output/id.', add_help=True)
     parser.add_argument("--share", action="store_true", dest="share_enabled", default=False, help="Разрешить совместное использование")
     parser.add_argument("--listen", action="store_true", default=False, help="Сделать WebUI доступным из вашей локальной сети.")
     parser.add_argument('--listen-host', type=str, help='Имя хоста, которое будет использовать сервер.')
