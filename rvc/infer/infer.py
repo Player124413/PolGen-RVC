@@ -53,9 +53,9 @@ class Config:
 
     def _update_config_files(self):
         for config_file in ["32k.json", "40k.json", "48k.json"]:
-            config_path = now_dir / "rvc" / "configs" / config_file
+            config_path = os.path.join(os.getcwd(), "rvc", "configs", config_file)
             self._replace_in_file(config_path, "true", "false")
-        trainset_path = now_dir / "rvc" / "trainset_preprocess_pipeline_print.py"
+        trainset_path = os.path.join(os.getcwd(), "rvc", "infer", "trainset_preprocess_pipeline_print.py")
         self._replace_in_file(trainset_path, "3.7", "3.0")
 
     @staticmethod
