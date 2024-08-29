@@ -9,7 +9,7 @@ from rvc.lib.algorithm.synthesizers import Synthesizer
 from rvc.lib.my_utils import load_audio
 from .pipeline import VC
 
-now_dir = Path{now_dir}
+now_dir = Path()
 
 class Config:
     def __init__(self, device, is_half):
