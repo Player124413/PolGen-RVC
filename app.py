@@ -27,4 +27,9 @@ if __name__ == '__main__':
             zip_upload()
             files_upload()
 
-    app.launch(share=True, show_error=True, quiet=True, show_api=False)
+     app.launch(
+        share=True,
+        enable_queue=True,
+        server_name=None if not args.listen else (args.listen_host or '0.0.0.0'),
+        server_port=args.listen_port,
+    )
