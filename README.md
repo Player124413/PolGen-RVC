@@ -83,14 +83,14 @@ sudo apt-get install ffmpeg
 
 **`Pol-Gen:`**
 ```
-git clone -b CoverGen https://github.com/Bebra777228/Pol-Litres-RVC
-cd CoverGen
+git clone -b PolGen https://github.com/Bebra777228/PolGen-RVC.git
+cd PolGen
 pip install -r requirements.txt
 ```
 **`Pol-Gen-Lite:`**
 ```
-!git clone -b CoverGenLite https://github.com/Bebra777228/Pol-Litres-RVC
-%cd CoverGenLite
+!git clone -b PolGen-Lite https://github.com/Bebra777228/PolGen-RVC
+%cd PolGen-Lite
 pip install -r requirements.txt
 ```
 
@@ -109,7 +109,7 @@ python CoverGen.py
 ```
 **`Pol-Gen-Lite:`**
 ```
-python CoverGenLite.py
+python app.py
 ```
 Когда появится следующее сообщение **`Running on local URL: http://127.0.0.1:7860`**, вы можете щелкнуть на ссылке, чтобы открыть вкладку с интерфейсом.
 
