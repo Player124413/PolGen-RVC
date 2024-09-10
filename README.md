@@ -32,7 +32,7 @@
 
 1. Скачайте ZIP-архив и распакуйте содержимое в любое удобное место - [Скачать](https://github.com/Bebra777228/PolGen-RVC/archive/refs/heads/PolGen.zip)
 2. Запустите файл:
-   - **Windows**: `install-run.bat`
+   - **Windows**: `PolGen.exe`
    - **Linux**: `install-run.sh`
 
 > Для Windows, возможно, придется установить **[Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/)** с выбранной нагрузкой **«Desktop development with C++» (или «Разработка классических приложений на C++»)** во время установки.
@@ -41,7 +41,7 @@
 
 1. Скачайте ZIP-архив и распакуйте содержимое в любое удобное место - [Репозиторий](https://huggingface.co/Politrees/PolGen/tree/main) / [Скачать](https://huggingface.co/Politrees/PolGen/resolve/main/PolGen-v1.2.0.zip?download=true)
 2. Запустите файл:
-   - **Windows**: `install-run.bat`
+   - **Windows**: `PolGen.exe`
    - **Linux**: `install-run.sh`
 
 ---
